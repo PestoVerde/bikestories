@@ -1,0 +1,39 @@
+baseURL = "http://localhost:1313/"
+locale = "ru-RU"
+title = "Байки о байках"
+theme = "PaperMod"
+
+[taxonomies]
+category = "categories"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+description = "О мотоциклах по-русски"
+ShowBreadCrumbs = true
+ShowPostNavLinks = true
+ShowReadingTime = true
+ShowShareButtons = true
+
+[params.fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 1000
+threshold = 0.4
+minMatchCharLength = 2
+keys = ["title", "permalink", "summary", "content"]
+
+[[menu.main]]
+name = "Категории"
+url = "/categories/"
+weight = 10
+
+[[menu.main]]
+name = "Поиск"
+url = "/search/"
+weight = 20

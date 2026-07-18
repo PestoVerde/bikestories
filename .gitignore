@@ -1,0 +1,16 @@
+# Hugo output
+public/
+resources/
+.hugo_build.lock
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Migration files
+WordPress.2026-07-18.xml
+wordpress_to_hugo.py
+README_wordpress_to_hugo.md
